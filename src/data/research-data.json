@@ -1,0 +1,100 @@
+{
+  "themes": [
+    {
+      "id": "t1",
+      "title": "Users struggle to validate decisions without peer input",
+      "description": "Across multiple research sessions, participants consistently expressed difficulty making confident decisions in isolation. They seek validation from trusted peers before committing to important choices, revealing a gap in tools that facilitate collaborative decision-making.",
+      "sources": ["JTBD Clusters", "Atomic Facts", "Transcripts"],
+      "clusterCount": 6,
+      "color": "blue",
+      "clusters": [
+        {
+          "id": "c1",
+          "name": "Need for Collaborative Validation",
+          "summary": "Users want to share draft decisions with specific colleagues before finalizing them. They need mechanisms to request feedback and track whether their thinking aligns with team norms.",
+          "entityCount": 8,
+          "entities": [
+            {
+              "id": "e1",
+              "statement": "When I need to make a decision about our product strategy, I want to run it by Sarah and Mike before the exec meeting, so that I can be sure I'm not missing something obvious.",
+              "type": "jtbd",
+              "pains": ["Can't easily share draft thinking", "No way to know if team agrees"],
+              "gains": ["Increased confidence", "Fewer meeting surprises"],
+              "source": "Interview #47",
+              "transcriptId": "T-032",
+              "participantId": "P-23",
+              "timestamp": "31:42",
+              "date": "Nov 8, 2024",
+              "verbatimQuote": "Yeah, like, I never feel confident going into those exec meetings unless I've at least bounced the idea off Sarah and Mike first. They just... they get it, you know? And if they think I'm way off base, I'd rather know before I stand up in front of everyone.",
+              "context": "Question asked: 'Tell me about a time when you felt uncertain about a decision you needed to make for work.'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "title": "Trust is earned through transparency, not automation",
+      "description": "Participants expressed skepticism toward automated recommendations that lack clear explanations. They trust systems that show their work and reveal decision-making processes rather than presenting conclusions as fait accompli.",
+      "sources": ["JTBD Clusters", "Atomic Facts"],
+      "clusterCount": 4,
+      "color": "green",
+      "clusters": [
+        {
+          "id": "c3",
+          "name": "Explainability as Trust Signal",
+          "summary": "Users demand visibility into how systems arrive at conclusions. Black-box recommendations are met with suspicion, while transparent reasoning builds confidence.",
+          "entityCount": 15,
+          "entities": [
+            {
+              "id": "e3",
+              "statement": "If a tool is going to suggest something to me, I need to see why it thinks that. I don't trust magic—I trust logic I can follow.",
+              "type": "fact",
+              "pains": ["Opaque AI recommendations", "Can't verify reasoning"],
+              "gains": ["Confidence in suggestions", "Ability to override"],
+              "source": "Interview #52",
+              "transcriptId": "T-041",
+              "participantId": "P-31",
+              "timestamp": "18:23",
+              "date": "Nov 9, 2024",
+              "verbatimQuote": "I think the problem with a lot of these AI tools is they just... they give you an answer, right? And you're supposed to just trust it. But how do I know it's not hallucinating or making stuff up? If a tool is going to suggest something to me, I need to see why it thinks that. Show me the data. Show me the logic. I don't trust magic—I trust logic I can follow.",
+              "context": "Question asked: 'How do you evaluate whether to trust a new tool or feature?'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "title": "Context switching is the silent productivity killer",
+      "description": "Research revealed that participants lose significant time and mental energy navigating between tools. The cost of context switching compounds when workflows require information from multiple systems that don't integrate seamlessly.",
+      "sources": ["Transcripts", "JTBD Clusters", "Surveys"],
+      "clusterCount": 8,
+      "color": "amber",
+      "clusters": [
+        {
+          "id": "c4",
+          "name": "Tool Fragmentation Fatigue",
+          "summary": "Participants described frustration with having to consult multiple tools for related tasks. They want unified interfaces that reduce the cognitive load of switching contexts.",
+          "entityCount": 10,
+          "entities": [
+            {
+              "id": "e4",
+              "statement": "I have like eight tabs open just to do one task. Slack for the conversation, Notion for the doc, Figma for the mocks, Linear for the tickets... it's exhausting.",
+              "type": "pain",
+              "pains": ["Tab overload", "Information scattered"],
+              "gains": ["Single source of truth", "Faster workflows"],
+              "source": "Interview #61",
+              "transcriptId": "T-048",
+              "participantId": "P-38",
+              "timestamp": "42:15",
+              "date": "Nov 11, 2024",
+              "verbatimQuote": "It's like, every morning I open my laptop and I have like eight tabs open just to do one task. Slack for the conversation, Notion for the doc, Figma for the mocks, Linear for the tickets... and then I have to remember which one has the latest version of what. It's exhausting. Sometimes I just... I just want everything in one place, you know?",
+              "context": "Question asked: 'Walk me through your typical morning workflow. What does starting your workday look like?'"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
