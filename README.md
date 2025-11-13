@@ -140,12 +140,48 @@ research-dashboard/
 
 ## 🚢 Deployment
 
-### Static Hosting (Recommended)
+### Automated Deployment (Current Setup)
+
+This project uses **GitHub Actions + Vercel** for fully automated deployments.
+
+#### Branch Strategy
+
+- **`main`** - Development/preview branch → Auto-deploys to Vercel preview
+- **`production`** - Live production branch → Auto-deploys to Vercel production
+
+#### Deploying to Production
+
+```bash
+# 1. Commit your changes to main
+git add .
+git commit -m "Your changes"
+git push origin main
+
+# 2. When ready to go live, merge to production
+git checkout production
+git merge main
+git push origin production
+git checkout main
+```
+
+**That's it!** GitHub Actions automatically builds and deploys to Vercel.
+
+#### Deployment URLs
+
+- **Production**: https://research-dashboard-dv2lqgyo8-johanlauritsen-4112s-projects.vercel.app
+- **GitHub Repo**: https://github.com/Hansowner/research-dashboard
+- **Monitor Deployments**: https://github.com/Hansowner/research-dashboard/actions
+
+---
+
+### Manual Deployment (Alternative)
+
+If you need to deploy manually:
 
 1. Build the project: `pnpm build`
 2. Deploy the `dist/` folder to:
+   - **Vercel**: `vercel deploy --prod`
    - **Netlify**: Drag and drop the `dist` folder
-   - **Vercel**: `vercel deploy`
    - **GitHub Pages**: Copy to `docs/` and enable Pages
    - **Cloudflare Pages**: Connect your repo
    - **AWS S3**: Upload `dist` contents to bucket
